@@ -82,3 +82,23 @@ java.io.FileNotFoundException: /home/lztao/workspace/omnetpp_workspace/demo_tsn1
 	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-04-12 14:33:05.130
+!MESSAGE Indexed 'inet' (1,022 sources, 1,597 headers) in 101 sec: 129,067 declarations; 593,649 references; 938 unresolved inclusions; 7 syntax errors; 31,299 unresolved names (4.2%)
+
+!ENTRY org.eclipse.core.resources 4 568 2019-04-12 14:36:21.832
+!MESSAGE Could not write metadata for '/nesting'.
+!STACK 0
+java.io.FileNotFoundException: /home/lztao/workspace/omnetpp_workspace/demo_tsn1/.metadata/.plugins/org.eclipse.core.resources/.projects/nesting/.markers.snap (No such file or directory)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1852)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1224)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
