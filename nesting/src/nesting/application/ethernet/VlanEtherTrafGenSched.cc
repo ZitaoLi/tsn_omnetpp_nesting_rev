@@ -98,15 +98,25 @@ void VlanEtherTrafGenSched::sendPacket() {
     auto ieee8021q = datapacket->addTag<VLANTagReq>();
     ieee8021q->setPcp(header.q1Tag.getPcp());
     ieee8021q->setDe(header.q1Tag.getDe());
-
-    // TODO: code stream ID, seqNum and other parameters here!
-
-    // TODO: set VID here!
     ieee8021q->setVID(header.q1Tag.getVID());
 
     EV_TRACE << getFullPath() << ": Send TSN packet '" << datapacket->getName()
                     << "' at time " << clock->getTime().inUnit(SIMTIME_US)
                     << endl;
+
+    // TODO: code stream ID, seqNum and other parameters here!
+    auto rTag = datapacket->addTag<VLANTagR>();
+    unsigned int uniqueID = header.rTag.getUniqueID();
+    rTag->setUniqueID(uniqueID);
+    if (ID_SeqNum.find(uniqueID) != ID_SeqNum.end()) {
+        std::pair<unsigned int, unsigned int> p {uniqueID, 0};
+        ID_SeqNum.insert(p);
+    } else {
+        ID_SeqNum[uniqueID] = (ID_SeqNum[uniqueID])++;
+    }
+    rTag->setSeqNum(ID_SeqNum[uniqueID]);
+
+    // TODO: print info about Stream
 
     emit(sentPkSignal, datapacket);
     send(datapacket, "out");

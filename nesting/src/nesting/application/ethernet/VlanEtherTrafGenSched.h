@@ -58,6 +58,11 @@ private:
 
     IClock *clock;
 
+    /**
+     * use to storage streamID/seqNum pair
+     */
+    std::unordered_map<unsigned int, unsigned int> ID_SeqNum;
+
 protected:
 
     // receive statistics

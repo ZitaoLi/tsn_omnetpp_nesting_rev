@@ -113,6 +113,7 @@
  nesting/ieee8021q/queue/gating/../../queue/gating/../../../application/ethernet/../../common/schedule/../../ieee8021q/Ieee8021q.h \
  nesting/ieee8021q/queue/gating/../../queue/gating/../../../application/ethernet/../../common/schedule/../../linklayer/common/Ieee8021QCtrl.h \
  nesting/ieee8021q/queue/gating/../../queue/gating/../../../application/ethernet/../../common/schedule/../../linklayer/common/VLANTag_m.h \
+ nesting/ieee8021q/queue/gating/../../queue/gating/../../../application/ethernet/../../common/schedule/../../linklayer/common/VLANTagR_m.h \
  ../../inet/src/inet/linklayer/common/MacAddressTag_m.h \
  nesting/ieee8021q/queue/gating/../../queue/gating/../../../application/ethernet/../../ieee8021q/clock/IClock.h \
  nesting/ieee8021q/queue/gating/../../queue/gating/../../relay/FilteringDatabase.h \
@@ -345,6 +346,8 @@ nesting/ieee8021q/queue/gating/../../queue/gating/../../../application/ethernet/
 nesting/ieee8021q/queue/gating/../../queue/gating/../../../application/ethernet/../../common/schedule/../../linklayer/common/Ieee8021QCtrl.h:
 
 nesting/ieee8021q/queue/gating/../../queue/gating/../../../application/ethernet/../../common/schedule/../../linklayer/common/VLANTag_m.h:
+
+nesting/ieee8021q/queue/gating/../../queue/gating/../../../application/ethernet/../../common/schedule/../../linklayer/common/VLANTagR_m.h:
 
 ../../inet/src/inet/linklayer/common/MacAddressTag_m.h:
 

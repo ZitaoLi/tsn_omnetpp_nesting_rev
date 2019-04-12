@@ -63,6 +63,7 @@
  nesting/application/ethernet/../../common/schedule/../../ieee8021q/../linklayer/common/VLANTag_m.h \
  nesting/application/ethernet/../../common/schedule/../../linklayer/common/Ieee8021QCtrl.h \
  nesting/application/ethernet/../../common/schedule/../../linklayer/common/VLANTag_m.h \
+ nesting/application/ethernet/../../common/schedule/../../linklayer/common/VLANTagR_m.h \
  ../../inet/src/inet/linklayer/common/MacAddressTag_m.h \
  ../../inet/src/inet/linklayer/common/MacAddress_m.h \
  ../../inet/src/inet/linklayer/ethernet/EtherFrame_m.h \
@@ -204,6 +205,8 @@ nesting/application/ethernet/../../common/schedule/../../ieee8021q/../linklayer/
 nesting/application/ethernet/../../common/schedule/../../linklayer/common/Ieee8021QCtrl.h:
 
 nesting/application/ethernet/../../common/schedule/../../linklayer/common/VLANTag_m.h:
+
+nesting/application/ethernet/../../common/schedule/../../linklayer/common/VLANTagR_m.h:
 
 ../../inet/src/inet/linklayer/common/MacAddressTag_m.h:
 

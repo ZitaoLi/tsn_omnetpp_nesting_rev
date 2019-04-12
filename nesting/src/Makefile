@@ -49,11 +49,13 @@ OBJS = \
     $O/nesting/linklayer/framePreemption/FrameForward.o \
     $O/nesting/linklayer/framePreemption/PreemptedFrame.o \
     $O/nesting/linklayer/common/VLANTag_m.o \
+    $O/nesting/linklayer/common/VLANTagR_m.o \
     $O/nesting/linklayer/framePreemption/PreemptedFrame_m.o
 
 # Message files
 MSGFILES = \
     nesting/linklayer/common/VLANTag.msg \
+    nesting/linklayer/common/VLANTagR.msg \
     nesting/linklayer/framePreemption/PreemptedFrame.msg
 
 # SM files

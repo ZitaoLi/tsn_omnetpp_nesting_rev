@@ -54,11 +54,13 @@ HostSchedule<Ieee8021QCtrl>* HostScheduleBuilder::createHostScheduleFromXML(
         // etherctrl.setTagged(true); no tagged in Ieee802_1QHeader
 
         // TODO: Get stream ID
-        const char* streamIDCString =
-                entry->getFirstChildWithTag("streamID")->getNodeValue();
-        unsigned int streamID = atoi(streamIDCString);
+        const char* uniqueIDCString =
+                entry->getFirstChildWithTag("uniqueID")->getNodeValue();
+        unsigned int uniqueID = atoi(uniqueIDCString);
 
         // TODO: code stream ID, seqNum and other parameters into VID here!
+        header.rTag.setUniqueID((uint16_t)uniqueID);
+        header.rTag.setSeqNum((uint32_t)0);
 
         // TODO: add VID here!
         header.q1Tag.setVID(0);

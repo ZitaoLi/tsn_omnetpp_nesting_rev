@@ -14,11 +14,13 @@
 //
 
 #include "VLANTag_m.h"
+#include "VLANTagR_m.h"
 #include "inet/linklayer/common/MacAddressTag_m.h"
 
 namespace nesting {
 struct Ieee8021QCtrl {
     VLANTagReq q1Tag;
+    VLANTagR rTag;
     inet::MacAddressReq macTag;
 };
 

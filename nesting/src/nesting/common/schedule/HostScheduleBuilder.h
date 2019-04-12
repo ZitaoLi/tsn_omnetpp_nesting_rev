@@ -18,6 +18,8 @@
 
 #include <omnetpp.h>
 
+#include <unordered_map>
+
 #include "HostSchedule.h"
 #include "../../ieee8021q/Ieee8021q.h"
 #include "../../linklayer/common/Ieee8021QCtrl.h"

@@ -523,3 +523,26 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 
 !ENTRY org.eclipse.cdt.core 1 0 2019-04-12 15:06:31.712
 !MESSAGE Indexed 'nesting' (25 sources, 419 headers) in 22.7 sec: 36,186 declarations; 64,843 references; 34 unresolved inclusions; 1 syntax errors; 737 unresolved names (0.72%)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-04-12 16:28:58.066
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-04-12 16:28:58.067
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-04-12 16:28:58.067
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.omnetpp.launch 4 139 2019-04-12 17:01:44.230
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.omnetpp.launch 4 139 2019-04-12 17:02:02.067
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)

@@ -9,6 +9,7 @@
 			<dest>01:00:00:00:00:04</dest>
 			<!-- byte -->
 			<size>354</size>
+			<uniqueID>1</uniqueID>
 		</entry>
 	</host>
 	<switch name="switchA">
