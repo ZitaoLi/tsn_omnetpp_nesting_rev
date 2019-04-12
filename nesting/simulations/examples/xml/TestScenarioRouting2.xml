@@ -1,0 +1,26 @@
+<filteringDatabases>
+	<filteringDatabase id="switchA">
+	    <static>
+	        <forward>
+	        	<multicastAddress macAddress="01-00-00-00-00-04" ports="3 4" />
+	        	<multicastAddress macAddress="01-00-00-00-00-05" ports="3 4" />
+	        </forward>
+	    </static>
+	</filteringDatabase>
+	<filteringDatabase id="switchB">
+	    <static>
+	        <forward>
+	        	<multicastAddress macAddress="01-00-00-00-00-04" ports="0" />
+	        	<multicastAddress macAddress="01-00-00-00-00-05" ports="1" />
+	        </forward>
+	    </static>
+	</filteringDatabase>
+	<filteringDatabase id="switchC">
+	    <static>
+	        <forward>
+	        	<multicastAddress macAddress="01-00-00-00-00-04" ports="1" />
+	        	<multicastAddress macAddress="01-00-00-00-00-05" ports="1" />
+	        </forward>
+	    </static>
+	</filteringDatabase>
+</filteringDatabases>
